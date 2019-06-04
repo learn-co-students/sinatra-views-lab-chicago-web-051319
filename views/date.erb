@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Date</title>
+  </head>
+  <body>
+    <h1>
+      <%
+      day = Time.now.strftime("%A")
+      month = Time.now.strftime("%B")
+      date = Time.now.strftime("%d")
+      year = Time.now.strftime("%Y")
+      %>
+      <%=
+      "The date is " + day + ", " + month + " " + date + ", " + year
+      %>
+    </h1>
+  </body>
+</html>
